@@ -8,7 +8,7 @@ body {
 }
 
 #header {
-  color: aqua;
+  color: black;
   background: grey;
 }
 
@@ -28,9 +28,9 @@ h1 {
 }
 #center {
   width: 100%;
-  background: green;
+  background: grey;
   z-index: 0;
-  color: white;
+  color: black;
 }
 
 div#center p {
@@ -42,18 +42,18 @@ div#center p {
   width: 200px;          /* LC width */
   right: 200px;          /* LC width */
   margin-left: -100%;
-  background: white;
+  background: grey;
   color: black;
 }
 #right {
   width: 150px;          /* RC width */
   margin-right: -150px;  /* RC width */
-  background: white;
+  background: grey;
   color: black;
 }
 #footer {
   clear: both;
-  background: white;
+  background: grey;
   text-decoration: underline;
 }
 
