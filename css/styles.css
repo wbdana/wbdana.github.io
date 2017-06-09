@@ -4,12 +4,12 @@ body {
   min-width: 550px;      /* 2x LC width + RC width */
   font-family: sans-serif;
   text-align: center;
-  background: white;
+  background: grey;
 }
 
 #header {
   color: aqua;
-  background: black;
+  background: grey;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 #container {
   padding-left: 200px;   /* LC width */
   padding-right: 150px;  /* RC width */
-  background: red;
+  background: grey;
 }
 #container .column {
   position: relative;
@@ -42,18 +42,18 @@ div#center p {
   width: 200px;          /* LC width */
   right: 200px;          /* LC width */
   margin-left: -100%;
-  background: aqua;
-  color: white;
+  background: white;
+  color: black;
 }
 #right {
   width: 150px;          /* RC width */
   margin-right: -150px;  /* RC width */
-  background: purple;
-  color: white;
+  background: white;
+  color: black;
 }
 #footer {
   clear: both;
-  background: blue;
+  background: white;
   text-decoration: underline;
 }
 
