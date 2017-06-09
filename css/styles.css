@@ -1,0 +1,171 @@
+/* Need to figure out what is causing the white space in the body above/below the header (WDANA Labs) */
+
+body {
+  min-width: 550px;      /* 2x LC width + RC width */
+  font-family: sans-serif;
+  text-align: center;
+  background: white;
+}
+
+#header {
+  color: aqua;
+  background: black;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+#container {
+  padding-left: 200px;   /* LC width */
+  padding-right: 150px;  /* RC width */
+  background: red;
+}
+#container .column {
+  position: relative;
+  float: left;
+
+}
+#center {
+  width: 100%;
+  background: green;
+  z-index: 0;
+  color: white;
+}
+
+div#center p {
+  padding-bottom: 0.5em;
+
+}
+
+#left {
+  width: 200px;          /* LC width */
+  right: 200px;          /* LC width */
+  margin-left: -100%;
+  background: aqua;
+  color: white;
+}
+#right {
+  width: 150px;          /* RC width */
+  margin-right: -150px;  /* RC width */
+  background: purple;
+  color: white;
+}
+#footer {
+  clear: both;
+  background: blue;
+  text-decoration: underline;
+}
+
+.sec-end {
+  border-style: solid;
+  border-bottom: thin solid #fff;
+  padding-bottom: 10px;
+}
+
+.sec-start {
+  border-style: solid;
+  border-top: thin solid #fff;
+  padding-top: 10px;
+}
+
+/***SOCIAL BAR***/
+
+/*** FS Style Social Bar #social {
+  position: fixed;
+  top: 200px;
+  right: 3px;
+  width: 40px;
+  z-index: 1;
+  line-height: 1px;
+}
+a.fbook, a.twitt, a.gplus {
+  display: block;
+  width: 40px;
+  height: 40px
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(../images/social-icons.png) no-repeat;
+}
+a.fbook { background-position: 0 0; }
+a.fbook:hover { background-position: -40px 0; }
+a.fbook:hover { background-position: -80px 0; }
+a.twitt { background-position: 0 -40px; }
+a.twitt:hover { background-position: -40px -40px }
+a.twitt:active { background-position: -80px -40px; }
+a.gplus { background-position: 0 -80px; }
+a.gplus:hover { background-position: -40px -80px }
+a.gplus:active { background-position: -80px -80px } ***/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: "entypo", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+/* Odd .container selector:
+.container {
+  margin: 0 auto;
+  padding: 20px 50px;
+  background: white;
+}*/
+
+#sticky-social {
+  right: 0;
+  position: fixed;
+  top: 150px;
+}
+
+#sticky-social a {
+  background: #333;
+  color: #fff;
+  display: block;
+  height: 35px;
+  font: 16px "Open Sans", sans-serif;
+  line-height: 35px;
+  position: relative;
+  text-align: center;
+  width: 150px;
+}
+
+#sticky-social a span {
+  line-height: 35px;
+  right: -120px;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+}
+
+#sticky-social a:hover span {
+  right: 100%;
+  z-index: 1;
+}
+
+#sticky-social a[class*="fbook"],
+#sticky-social a[class*="fbook"]:hover,
+#sticky-social a[class*="fbook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitt"],
+#sticky-social a[class*="twitt"]:hover,
+#sticky-social a[class*="twitt"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }
+
+/*** IE6 Fix ***/
+* html #left {
+  left: 150px;           /* RC width */
+}
